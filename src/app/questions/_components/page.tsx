@@ -13,7 +13,7 @@ interface QuestionFormProps {
   type?: "edit" | "add";
 }
 
-function QuestionForm({ initialData = null, type = "add" }: QuestionFormProps) {
+const QuestionForm=({ initialData = null, type = "add" }: QuestionFormProps)=> {
   const router = useRouter();
   const [loading, setLoading] = React.useState(false);
   const [showCode, setShowCode] = React.useState(false);
